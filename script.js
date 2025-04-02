@@ -357,4 +357,20 @@ document.addEventListener('DOMContentLoaded', function() {
             card.style.transform = 'scale(1)';
         });
     });
+
+    // Menú móvil
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // Alternar clases en lugar de manipular estilos directamente
+    menuToggle.addEventListener('click', function () {
+        mobileMenu.classList.toggle('open');
+    });
+
+    // Cerrar el menú al hacer clic en un enlace
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function () {
+            mobileMenu.classList.remove('open');
+        });
+    });
 });
