@@ -146,6 +146,58 @@ nav ul li a:hover {
     color: var(--primary);
 }
 
+/* Estilos para el menú hamburguesa */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background-color: var(--card);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.mobile-menu ul li {
+    margin-bottom: 15px;
+}
+
+.mobile-menu ul li a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    padding: 10px;
+    transition: background-color var(--transition-speed);
+}
+
+.mobile-menu ul li a:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Mostrar el menú móvil cuando tenga la clase "open" */
+.mobile-menu.open {
+    display: block;
+}
+
 /* Sección Hero */
 .hero {
     padding: 120px 0 80px;
@@ -755,6 +807,60 @@ footer {
     }
     .skills-container {
         grid-template-columns: 1fr;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+    }
+}
+
+/* Ocultar el menú normal y mostrar el menú hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Ocultar el menú normal */
+    }
+
+    .menu-toggle {
+        display: inline-block; /* Mostrar el botón del menú hamburguesa */
+    }
+
+    .mobile-menu {
+        display: none; /* Ocultar el menú desplegable inicialmente */
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        background-color: var(--card);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .mobile-menu ul {
+        list-style: none;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .mobile-menu ul li {
+        margin-bottom: 15px;
+    }
+
+    .mobile-menu ul li a {
+        color: var(--text-primary);
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        display: block;
+        padding: 10px;
+        transition: background-color var(--transition-speed);
+    }
+
+    .mobile-menu ul li a:hover {
+        background-color: var(--primary);
+        color: white;
     }
 }
 
