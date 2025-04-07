@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio SebasHuaypar</title>
+    <meta name="description" content="Portafolio de Sebastián Huaypar, estudiante de Ciencias de la Computación especializado en análisis de datos, machine learning y visualización de datos.">
+    <meta name="keywords" content="Sebastián Huaypar, portafolio, análisis de datos, machine learning, visualización de datos, Power BI, Python">
+    <meta name="author" content="Sebastián Huaypar">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Portafolio SebasHuaypar">
+    <meta property="og:description" content="Portafolio de Sebastián Huaypar, estudiante de Ciencias de la Computación especializado en análisis de datos, machine learning y visualización de datos.">
+    <meta property="og:image" content="hero-image.png">
+    <meta property="og:url" content="https://example.com">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="dark-mode">
+    <!-- Contenedor para partículas -->
+    <div id="particles-js" aria-hidden="true"></div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Sebastián Huaypar</h1>
+                <p class="tagline">Estudiante de Ciencias de la Computación</p>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio" aria-current="page">Inicio</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <button id="theme-toggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+        <!-- Menú desplegable para móviles -->
+        <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Transformando Datos en <span class="highlight">Decisiones</span></h2>
+                    <p>Estudiante de la Universidad Nacional de Ingeniería, apasionado por la tecnología y la automatización</p>
+                    <div class="cta-buttons">
+                        <a href="#proyectos" class="btn primary">Ver Proyectos</a>
+                        <a href="#contacto" class="btn secondary">Contactar</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="hero-image.png" alt="Sebastián Huaypar" class="hero-overlay" loading="lazy" width="400" height="400">
+                    <div class="data-visualization-element" aria-hidden="true"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="projects">
+            <div class="container">
+                <h2>Proyectos Destacados</h2>
+                <div class="project-grid">
+                    <!-- Proyecto 1 -->
+                    <article class="project-card" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="/api/placeholder/400/200" alt="Imagen del proyecto Análisis Predictivo de Ventas" loading="lazy" width="400" height="200">
+                        </div>
+                        <div class="project-info">
+                            <h3>Análisis Predictivo de Ventas</h3>
+                            <p>Modelo de machine learning para predecir tendencias de ventas utilizando Python y scikit-learn.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>Scikit-learn</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/username/repo1" class="btn small" target="_blank" rel="noopener">
+                                    <i class="fab fa-github" aria-hidden="true"></i> Código
+                                </a>
+                                <a href="https://nbviewer.org" class="btn small" target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="/api/placeholder/400/200" alt="Imagen del proyecto Dashboard Interactivo de KPIs" loading="lazy" width="400" height="200">
+                        </div>
+                        <div class="project-info">
+                            <h3>Dashboard Interactivo de KPIs</h3>
+                            <p>Dashboard interactivo desarrollado en Power BI para seguimiento de KPIs empresariales.</p>
+                            <div class="tech-stack">
+                                <span>Power BI</span>
+                                <span>DAX</span>
+                                <span>SQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://app.powerbi.com" class="btn small" target="_blank" rel="noopener">
+                                    <i class="fas fa-chart-bar" aria-hidden="true"></i> Ver Dashboard
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="/api/placeholder/400/200" alt="Imagen del proyecto Segmentación de Clientes" loading="lazy" width="400" height="200">
+                        </div>
+                        <div class="project-info">
+                            <h3>Segmentación de Clientes</h3>
+                            <p>Análisis de clustering para identificar segmentos de clientes utilizando algoritmos no supervisados.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>K-means</span>
+                                <span>Matplotlib</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/username/repo3" class="btn small" target="_blank" rel="noopener">
+                                    <i class="fab fa-github" aria-hidden="true"></i> Código
+                                </a>
+                                <a href="https://colab.research.google.com" class="btn small" target="_blank" rel="noopener">
+                                    <i class="fas fa-code" aria-hidden="true"></i> Notebook
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 4 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="/api/placeholder/400/200" alt="Imagen del proyecto Visualización de Tendencias" loading="lazy" width="400" height="200">
+                        </div>
+                        <div class="project-info">
+                            <h3>Visualización de Tendencias</h3>
+                            <p>Gráficos interactivos creados con D3.js para explorar tendencias temporales en grandes conjuntos de datos.</p>
+                            <div class="tech-stack">
+                                <span>D3.js</span>
+                                <span>JavaScript</span>
+                                <span>SVG</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/username/repo4" class="btn small" target="_blank" rel="noopener">
+                                    <i class="fab fa-github" aria-hidden="true"></i> Código
+                                </a>
+                                <button class="btn small project-demo" data-project="interactive-chart">
+                                    <i class="fas fa-play" aria-hidden="true"></i> Demo en vivo
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="skills">
+            <div class="container">
+                <h2>Habilidades Técnicas</h2>
+                <div class="skills-container">
+                    <!-- Lenguajes de Programación -->
+                    <div class="skill-category">
+                        <h3>Lenguajes de Programación</h3>
+                        <div class="skill-items">
+                            <!-- Python -->
+                            <div class="skill-item">
+                                <div class="skill-circle" data-skill="95">
+                                    <svg aria-hidden="true" viewBox="0 0 100 100">
+                                        <circle class="background" cx="50" cy="50" r="40"></circle>
+                                        <circle class="progress" cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <i class="fab fa-python icon" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Python</span>
+                                <span class="sr-only">Nivel de habilidad: 95%</span>
+                            </div>
+                            <!-- SQL -->
+                            <div class="skill-item">
+                                <div class="skill-circle" data-skill="85">
+                                    <svg aria-hidden="true" viewBox="0 0 100 100">
+                                        <circle class="background" cx="50" cy="50" r="40"></circle>
+                                        <circle class="progress" cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <i class="fas fa-database icon" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">SQL</span>
+                                <span class="sr-only">Nivel de habilidad: 85%</span>
+                            </div>
+                            <!-- R -->
+                            <div class="skill-item">
+                                <div class="skill-circle" data-skill="85">
+                                    <svg aria-hidden="true" viewBox="0 0 100 100">
+                                        <circle class="background" cx="50" cy="50" r="40"></circle>
+                                        <circle class="progress" cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <i class="fas fa-code icon" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">R</span>
+                                <span class="sr-only">Nivel de habilidad: 85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Visualización de Datos -->
+                    <div class="skill-category">
+                        <h3>Visualización de Datos</h3>
+                        <div class="skill-items">
+                            <!-- Tableau -->
+                            <div class="skill-item">
+                                <div class="skill-circle" data-skill="80">
+                                    <svg aria-hidden="true" viewBox="0 0 100 100">
+                                        <circle class="background" cx="50" cy="50" r="40"></circle>
+                                        <circle class="progress" cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <i class="fas fa-chart-line icon" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Tableau</span>
+                                <span class="sr-only">Nivel de habilidad: 80%</span>
+                            </div>
+                            <!-- Power BI -->
+                            <div class="skill-item">
+                                <div class="skill-circle" data-skill="90">
+                                    <svg aria-hidden="true" viewBox="0 0 100 100">
+                                        <circle class="background" cx="50" cy="50" r="40"></circle>
+                                        <circle class="progress" cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <i class="fas fa-chart-bar icon" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Power BI</span>
+                                <span class="sr-only">Nivel de habilidad: 90%</span>
+                            </div>
+                            <!-- Matplotlib/Seaborn -->
+                            <div class="skill-item">
+                                <div class="skill-circle" data-skill="85">
+                                    <svg aria-hidden="true" viewBox="0 0 100 100">
+                                        <circle class="background" cx="50" cy="50" r="40"></circle>
+                                        <circle class="progress" cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <i class="fas fa-chart-pie icon" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Matplotlib/Seaborn</span>
+                                <span class="sr-only">Nivel de habilidad: 85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Machine Learning -->
+                    <div class="skill-category">
+                        <h3>Machine Learning</h3>
+                        <div class="skill-items">
+                            <!-- Scikit-learn -->
+                            <div class="skill-item">
+                                <div class="skill-circle" data-skill="85">
+                                    <svg aria-hidden="true" viewBox="0 0 100 100">
+                                        <circle class="background" cx="50" cy="50" r="40"></circle>
+                                        <circle class="progress" cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <i class="fas fa-brain icon" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Scikit-learn</span>
+                                <span class="sr-only">Nivel de habilidad: 85%</span>
+                            </div>
+                            <!-- TensorFlow -->
+                            <div class="skill-item">
+                                <div class="skill-circle" data-skill="75">
+                                    <svg aria-hidden="true" viewBox="0 0 100 100">
+                                        <circle class="background" cx="50" cy="50" r="40"></circle>
+                                        <circle class="progress" cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <i class="fas fa-robot icon" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">TensorFlow</span>
+                                <span class="sr-only">Nivel de habilidad: 75%</span>
+                            </div>
+                            <!-- Modelos Estadísticos -->
+                            <div class="skill-item">
+                                <div class="skill-circle" data-skill="80">
+                                    <svg aria-hidden="true" viewBox="0 0 100 100">
+                                        <circle class="background" cx="50" cy="50" r="40"></circle>
+                                        <circle class="progress" cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <i class="fas fa-chart-area icon" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Modelos Estadísticos</span>
+                                <span class="sr-only">Nivel de habilidad: 80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificaciones" class="certifications">
+            <div class="container">
+                <h2>Certificaciones</h2>
+                <div class="certification-grid">
+                    <!-- Certificación 1 -->
+                    <article class="certification-card">
+                        <div class="certification-image">
+                            <img src="cert1.png" alt="Certificación en Machine Learning" loading="lazy">
+                        </div>
+                        <div class="certification-info">
+                            <h3>Machine Learning</h3>
+                            <p>Certificación de Coursera en Machine Learning por Andrew Ng.</p>
+                        </div>
+                    </article>
+        
+                    <!-- Certificación 2 -->
+                    <article class="certification-card">
+                        <div class="certification-image">
+                            <img src="cert2.png" alt="Certificación en Power BI" loading="lazy">
+                        </div>
+                        <div class="certification-info">
+                            <h3>Power BI</h3>
+                            <p>Certificación oficial de Microsoft en Power BI.</p>
+                        </div>
+                    </article>
+        
+                    <!-- Certificación 3 -->
+                    <article class="certification-card">
+                        <div class="certification-image">
+                            <img src="cert3.png" alt="Certificación en Python" loading="lazy">
+                        </div>
+                        <div class="certification-info">
+                            <h3>Python</h3>
+                            <p>Certificación de Python para análisis de datos por DataCamp.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>¿Interesado en colaborar o tienes alguna pregunta?</p>
+            <ul class="contact-info">
+                <li><i class="fas fa-phone"></i>+51 974 234 205</li>
+                <li><i class="fas fa-envelope"></i>sebastianhuaypar93@gmai.com</li>
+            </ul>
+            <div class="social-links" role="navigation" aria-label="Enlaces a redes sociales">
+                <a href="https://linkedin.com/in/username" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                <a href="https://github.com/username" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    <span class="sr-only">GitHub</span>
+                </a>
+                <a href="https://twitter.com/username" target="_blank" rel="noopener" aria-label="Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+            </div>	
+            <p>&copy; 2025 Sebastián Huaypar Acurio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para demos interactivas -->
+    <div id="project-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Cerrar modal">&times;</button>
+            <div id="modal-container">
+                <h2 id="modal-title">Proyecto</h2>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Elemento para lectores de pantalla -->
+    <div class="sr-only" aria-live="polite" id="screen-reader-announcer"></div>
+</body>
+</html>
