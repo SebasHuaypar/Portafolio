@@ -640,7 +640,6 @@ button, a, .project-card {
 /* Estilos para la sección de certificaciones */
 .certifications {
     padding: 80px 0;
-    background-color: var(--background);
 }
 
 .certifications h2 {
